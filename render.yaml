@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: gold-price-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "7461879443:AAFf6YQXXe7AcOguLUEL-KbrZBnNmNNSYRw"
+      - key: CHAT_ID
+        value: "79176954"
+    plan: free
